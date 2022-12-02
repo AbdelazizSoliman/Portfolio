@@ -413,10 +413,7 @@ main {
   }
 
 /* Style for 1024px screen */
-@media screen and (min-width: 1024px) {
-  .card {
-    gap: 1.5rem;
-  }
+
 
   
   .nav-link a {
