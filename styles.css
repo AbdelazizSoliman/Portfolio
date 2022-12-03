@@ -1,41 +1,423 @@
-.container    {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-  .mb-auto,
-.my-auto {
-  margin-bottom: auto !important;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --clr-purple: #6070ff;
+  --clr-white: #fff;
+  --clr-para: #344563;
+  --clr-gray-100: #b3bac5;
 }
 
-.ml-auto,
-.mx-auto {
-  margin-left: auto !important;
+* {
+  margin: 0;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  background-color: #e5e5e5;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.logo a,
+.menu-icon a {
+  color: var(--clr-purple);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--clr-white);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+}
+
+.dev a {
+  font-weight: 500;
+  color: #7f8cff;
+}
+
+.nav-link a {
+  color: #fff;
+}
+
+.social-icons a {
+  margin-right: 1.2rem;
+}
+
+
+
+
+.nav-link a:hover {
+  color: var(--clr-para);
+}
+
+.bar1,
+.bar2,
+.bar3
+ {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--clr-purple);
+}
+
+
+.menu-icon.active .bar1 {
+  transform: translateY(8px) rotate(45deg);
+  background: #fff;
+}
+
+.menu-icon.active .bar3 {
+  transform: translateY(-8px) rotate(-45deg);
+  background: #fff;
+}
+
+.menu-icon.active .bar2 {
+  opacity: 0;
+}
+
+.nav-items {
+  display: block;
+  position: absolute;
+  background: var(--clr-purple);
+  top: 0;
+  left: -100%;
+  line-height: 60px;
+  height: 100vh;
+  font-size: 32px;
+  text-align: left;
+  font-weight: 600;
+  opacity: 0.9;
+  padding-top: 3.5rem;
+  list-style: none;
+}
+
+.nav-items.active {
+  left: 0;
+  width: 100%;
+}
+
+.menu-icon.active {
+  z-index: 2;
+  display: block;
+}
+
+/* Styling the front page */
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: var(--clr-white);
+  border: 1px solid #eaeff1;
+  border-bottom-left-radius: 5rem;
+  box-shadow: 0 10px 10px -10px rgba(83, 81, 81, 0.15);
+  position: relative;
+}
+
+.dev-child {
+  margin: 9rem 2rem;
+}
+
+.dev h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #172b4d;
+}
+
+.dev p {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--clr-para);
+  margin: 1.5rem 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.social-icons svg {
+  width: 1.5rem;
+}
+
+main {
+  display: grid;
+}
+
+
+
+
+  .dev {
+    background-image: url(img/header-shapesmobile@2x.svg);
+    background-position: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .dev h1 {
+    font-size: 3rem;
+    max-width: 300px;
+    line-height: 4rem;
+  }
+
+  
+
+/* Styles for 480px screen */
+
+@media screen and (min-width: 480px) {
+  .form-form {
+    background-image: url(img/contact-form-shapes-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
+  }
+
+  .dev {
+    background-image: url(img/header-shapesmobile@2x.svg);
+    background-position: 0% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .dev h1 {
+    font-size: 3rem;
+    max-width: 400px;
+    line-height: 4.55rem;
+  }
+
+
+
+/* Styling for 600px screen */
+
+@media screen and (min-width: 600px) {
+  .form-form {
+    background-image: url(img/contact-form-shapes-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% auto;
+  }
+
+  .dev {
+    background-image: url(img/header-shapesmobile@2x.svg);
+    background-position: auto;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+    color: var(--clr-para);
+  }
+
+  .dev h1 {
+    font-size: 3rem;
+    line-height: 4.55rem;
+    max-width: 600px;
+  }
+
+
+  .dev p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+
+  
+
+  .nav-items {
+    display: flex;
+    position: static;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    height: 0;
+    padding-top: 0;
+    background: none;
+    font-weight: 500;
+    opacity: 1;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+  }
+
+  .nav-link a {
+    color: var(--clr-para);
+  }
+
+
+@media screen and (min-width: 768px) {
+  .form-group {
+    background-image: url(img/contact-form-background-shapes.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100px;
+    background-size: contain;
+  }
+
+  .dev {
+    background-image: url(img/Header-bg.svg);
+    background-position: 0% 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .logo:hover {
+    transform: scale(1.2);
+  }
+
+  .dev h1 {
+    font-size: 3rem;
+    line-height: 4.55rem;
+    max-width: 400px;
+  }
+
+  .dev p {
+    font-size: 20px;
+  }
+
+  .dev a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .dev-child {
+    margin: 8rem;
+  }
+
+  .social-icons svg {
+    width: 1rem;
+  }
+
+  .card img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .social-icons svg:hover {
+    transition: transform 250ms;
+    transform: scale(1.2);
+  }
+
+
+
+ 
+  .nav-items {
+    display: flex;
+    position: static;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    height: 0;
+    padding-top: 0;
+    background: none;
+    font-weight: 500;
+    opacity: 1;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+  }
+
+  .nav-link a {
+    color: var(--clr-para);
+  }
+
+/* Styles for 900px screen */
+
+@media screen and (min-width: 900px) {
+  .dev {
+    background-image: url(img/Header-bg.svg);
+    background-position: 0% 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+
+  .dev h1 {
+    max-width: 395px;
+    font-size: 3rem;
+  }
+
+  .dev p {
+    margin: auto 0 3rem 0;
+  }
+
+  .dev a {
+    font-size: 1rem;
+  }
+
+  .about-child a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7f8cff;
+  }
+
+  .social-icons {
+    margin: 0.8rem 0;
+  }
+
+  .social-icons svg {
+    width: 1.5rem;
+  }
+
+  .social-icons svg:hover {
+    transition: 250ms;
+    transform: scale(1.5);
+    fill: var(--clr-purple);
+  }
+
+  
+
+  .dev-child {
+    margin-left: 14rem;
+    margin-right: 14rem;
+    padding: 7rem 0;
+  }
+
+
+  .nav-items {
+    margin-right: 7rem;
+  }
+
+  .logo a {
+    margin-left: 7rem;
+  }
+
+/* Style for 1024px screen */
+
+
+  
+  .nav-link a {
+    margin: 0 0.5rem;
+  }
+
   
