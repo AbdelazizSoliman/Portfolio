@@ -1,0 +1,38 @@
+:root {
+    --primary : #61E697;
+    --pure : #ffffff;
+    --dark : #232326;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--dark);
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: var(--pure);
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
