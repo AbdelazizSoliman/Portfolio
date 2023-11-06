@@ -4,6 +4,10 @@
     --dark : #232326;
 }
 
+body {
+    font-family: 'poppins', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +27,13 @@ header {
 header nav a {
     color: var(--pure);
     text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--primary);
 }
 
 .flex {
@@ -34,5 +45,33 @@ header nav a {
 }
 
 .space-between {
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .branding {
+    margin-right: 10rem;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border : 2px solid transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--pure);
 }
