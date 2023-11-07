@@ -126,8 +126,9 @@ header nav .branding {
 }
 
 .about .social a img {
-    height: 50px;
+    height: 40px;
     margin-right: 10px;
+    margin-top: 1rem;
 }
 
 /* .photo-about {
@@ -145,4 +146,13 @@ header nav .branding {
 
 .about .right h1 span {
    color: var(--primary);
+}
+
+.about .right h3 {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.about .right p {
+    font-size: 20px;
 }
