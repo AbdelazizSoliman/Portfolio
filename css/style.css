@@ -16,6 +16,7 @@ body {
 
 header {
     background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
 }
 
 .container {
@@ -74,4 +75,74 @@ header nav .branding {
     background: transparent;
     border-color: var(--primary);
     color: var(--pure);
+}
+
+.hero .left img {
+    width: 400px;
+    border-radius: 500px;
+}
+
+.hero .right {
+    color: var(--pure);
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.hero {
+    padding-bottom: 7rem;
+}
+
+.about .social a img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* .photo-about {
+    height: 18rem;
+} */
+
+.about .left img {
+    height: 400px;
+    border-radius: 1000px;
+}
+
+.about .right h1 {
+    font-size: 50px;
+}
+
+.about .right h1 span {
+   color: var(--primary);
 }
