@@ -171,6 +171,7 @@ header nav .branding {
 
 .skills .container {
     padding-top: 100px;
+    padding-bottom: 2rem;
 }
 
 .skills .section-heading {
@@ -228,4 +229,24 @@ header nav .branding {
 
 .skills .card-wrapper .card:hover {
     background: var(--primary);
+}
+
+.slider .slide img {
+    width: 400px;
+    height: 350px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.projects h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.slider .slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
