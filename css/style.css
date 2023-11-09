@@ -268,3 +268,8 @@ header nav .branding {
     border-radius: 50px;
     cursor: pointer;
 }
+
+.projects .dots li.slick-active button {
+    background-color: var(--primary);
+    width: 16px;
+}
