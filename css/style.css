@@ -1,0 +1,270 @@
+:root {
+    --primary : #61E697;
+    --pure : #ffffff;
+    --dark : #232326;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--primary);
+}
+
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-evenly;
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .branding {
+    margin-right: 10rem;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border : 2px solid transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--pure);
+}
+
+.hero .left img {
+    width: 400px;
+    border-radius: 500px;
+}
+
+.hero .right {
+    color: var(--pure);
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.hero {
+    padding-bottom: 7rem;
+}
+
+.about .social a img {
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 1rem;
+}
+
+
+.about .left img {
+    height: 400px;
+    border-radius: 1000px;
+}
+
+.about .right h1 {
+    font-size: 50px;
+}
+
+.about .right h1 span {
+   color: var(--primary);
+}
+
+.about .right h3 {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.about .right p {
+    font-size: 20px;
+}
+
+.skills {
+    background: var(--dark);
+    clip-path: polygon(
+        74% 7%,
+        100% 0,
+        100% 35%,
+        100% 70%, 
+        100% 100%, 
+        50% 100%, 
+        0 100%, 
+        0 70%, 
+        0 35%, 
+        0 0 );
+}
+
+.skills .container {
+    padding-top: 100px;
+    padding-bottom: 2rem;
+}
+
+.skills .section-heading {
+    color: var(--pure);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skills .section-heading span {
+    color: var(--primary);
+} 
+
+.section-heading + p {
+    color: var(--pure);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.back-end {
+    color: var(--pure);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+.card-wrapper img {
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills .card-wrapper .card {
+    background: var(--pure);
+    padding: 1rem 3rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skills .card-wrapper .card h2 {
+    margin-top: 3rem;
+}
+
+.skills .card-wrapper .card:hover {
+    background: var(--primary);
+}
+
+.slider .slide img {
+    width: 400px;
+    height: 350px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.projects h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.slider .slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .slider-dot .dots {
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+.projects .slider-dot button {
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    background-color: #61E697;
+    border-radius: 50px;
+    cursor: pointer;
+}
