@@ -250,3 +250,21 @@ header nav .branding {
     flex-direction: column;
     align-items: center;
 }
+
+.projects .slider-dot .dots {
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+.projects .slider-dot button {
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    background-color: #61E697;
+    border-radius: 50px;
+    cursor: pointer;
+}
