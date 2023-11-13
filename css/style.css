@@ -264,7 +264,7 @@ header nav .branding {
     margin-right: 5px;
     border: none;
     outline: none;
-    background-color: #61E697;
+    background-color: gray;
     border-radius: 50px;
     cursor: pointer;
 }
