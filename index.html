@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Abdelaziz Soliman</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <nav class="flex item-center space-between">
                 <div class="left flex item-center">
@@ -22,13 +23,13 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Projcts</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projcts</a>
                 </div>
                 <div class="right">
-                    <button class="btn btn-primary">Contact</button>
+                    <a href="#contact"><button class="btn btn-primary">Contact</button></a>
                 </div>
             </nav>
             <div class="hero flex item-center space-between">
@@ -45,7 +46,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container flex item-center">
             <div class="left flex-1">
                 <img src="./images/poto.png" alt="" class="photo-about">
@@ -73,7 +74,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h1 class="section-heading">My <span>Skills</span></h1>
             <p>Front-end</p>
@@ -128,7 +129,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h1>projects</h1>
             <div class="slider">
@@ -155,17 +156,43 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h1>Contact <span>Me</span></h1>
+            <h1 class="section-heading">Contact <span>Me</span></h1>
             <div class="card-wrapper">
-                <div class="card"></div>
-                <img src="./images/iphone.png" alt="">
-                <h2>Call me</h2>
-                <h4>+201020635513</h4>
+                <div class="card">
+                    <img src="./images/iphone.png" alt="">
+                    <h2>Call me</h2>
+                    <h4>+201020635513</h4>
+                </div>
+                <div class="card">
+                    <img src="./images/gmail.png" alt="">
+                    <h2>Email me</h2>
+                    <h4>abdelaziz.soliman89@gmail.com</h4>
+                </div>
             </div>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Send</button>
+                </div>
+            </form>
         </div>
     </section>
+
+    <footer>
+        <img src="./images/Logo.PNG" alt="">
+        <div class="footer-text">
+            Copyright 2023 @ Abdelaziz Soliman. All Rights Reserved
+        </div>
+    </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
