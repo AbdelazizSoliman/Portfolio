@@ -4,6 +4,11 @@
     --dark : #232326;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
+
 body {
     font-family: 'poppins', sans-serif;
 }
@@ -74,7 +79,7 @@ header nav .branding {
 .btn-primary:hover {
     background: transparent;
     border-color: var(--primary);
-    color: var(--pure);
+    color: var(--primary);
 }
 
 .hero .left img {
@@ -242,6 +247,7 @@ header nav .branding {
     font-size: 3rem;
     text-align: center;
     margin-top: 1rem;
+    color: var(--dark);
 }
 
 .slider .slide {
@@ -272,4 +278,86 @@ header nav .branding {
 .projects .dots li.slick-active button {
     background-color: var(--primary);
     width: 16px;
+}
+
+.contact .section-heading {
+    color: var(--dark);
+}
+
+.contact h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--dark);
+}
+
+.contact .section-heading span {
+    color: var(--primary);
+}
+
+.contact .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contact .card-wrapper .card img {
+    height: 100px;
+    margin-top: 1rem;
+    position:initial;
+    margin-left: 6rem;
+}
+
+.contact .card-wrapper .card {
+   text-align: center;
+}
+
+.contact .container {
+    padding-bottom: 100px;
+}
+
+.contact .input-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact .input-wrap input {
+    margin-top: 2rem;
+}
+
+.contact .input-wrap-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    padding: 1rem;
+}
+
+.contact .input-wrap-2 input {
+    margin-bottom: 1rem;
+}
+
+.contact .input-wrap-2 textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact .btn-wrapper {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark);
+    text-align: center;
+}
+
+footer img {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-text {
+    color: var(--pure);
 }
