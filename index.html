@@ -64,10 +64,14 @@
                     React, Ruby, Rails, and more. Beyond coding, I enjoy reading and watching documentaries.
                 </p>
                 <div class="social flex">
-                    <a href="#"><img src="./images/linkedin.png" alt=""></a>
-                    <a href="#"><img src="./images/github.png" alt=""></a>
-                    <a href="#"><img src="./images/medium.png" alt=""></a>
-                    <a href="#"><img src="./images/twitter.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/abdelazizsoliman" target="_blank"
+                        aria-label="linkedin icon"><img src="./images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/abdelazizsoliman" target="_blank" aria-label="github icon"><img
+                            src="./images/github.png" alt=""></a>
+                    <a href="https://medium.com/@abdelaziz.soliman89" target="_blank" aria-label="medium icon"><img
+                            src="./images/medium.png" alt=""></a>
+                    <a href="https://twitter.com/Abdelaz21958317" target="_blank" aria-label="twitter icon"><img
+                            src="./images/twitter.png" alt=""></a>
 
                 </div>
             </div>
@@ -171,17 +175,18 @@
                     <h4>abdelaziz.soliman89@gmail.com</h4>
                 </div>
             </div>
-            <form action="">
+            <form action="https://formspree.io/f/xqkjrrdg" method="POST" class="form-input">
                 <div class="input-wrap">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
+                    <input type="text" name="text" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-wrap-2">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="text" name="text" placeholder="Subject" required>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Message"
+                        required></textarea>
                 </div>
                 <div class="btn-wrapper">
-                    <button class="btn btn-primary">Send</button>
+                    <button class="btn btn-primary" type="submit">Send</button>
                 </div>
             </form>
         </div>
