@@ -14,190 +14,234 @@
 </head>
 
 <body>
-    <header id="home">
-        <div class="container">
-            <nav class="flex item-center space-between">
-                <div class="left flex item-center">
-                    <div class="branding">
-                        <img src="./images/Logo.PNG" alt="Logo" class="logo">
+    <div class="site-main-wrapper">
+        <div class="hamberger">
+            <button class="hamberger-button">
+                <img src="./images/hamberger.svg" alt="">
+            </button>
+        </div>
+        <div class="mobile-nav">
+            <button class="times">
+                <img src="./images/times.svg" alt="">
+            </button>
+            <ul>
+                <li><a href="#home" class="click">Home</a></li>
+                <li><a href="#about" class="click-1">About</a></li>
+                <li><a href="#skills" class="click-2">Skills</a></li>
+                <li><a href="#projects" class="click-3">Projects</a></li>
+            </ul>
+        </div>
+        <header id="home">
+            <div class="container">
+                <nav id="main-nav" class="flex item-center space-between">
+                    <div class="left flex item-center">
+                        <div class="branding">
+                            <img src="./images/Logo.PNG" alt="Logo" class="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projcts</a>
+                    </div>
+                    <div class="right">
+                        <a href="#contact"><button class="btn btn-primary">Contact</button></a>
+                    </div>
+                </nav>
+                <div class="hero flex item-center space-between">
+                    <div class="left flex-1 justify-center">
+                        <img src="./images/poto.png" alt="">
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Abdelaziz Soliman</h6>
+                        <h1>I'm a Creative <br><span>Full Stack Engineer</span></h1>
+                        <div>
+                            <a href="Resume.pdf" download="Resume">
+                                <button class="btn btn-secondary">Download CV</button>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projcts</a>
-                </div>
-                <div class="right">
-                    <a href="#contact"><button class="btn btn-primary">Contact</button></a>
-                </div>
-            </nav>
-            <div class="hero flex item-center space-between">
-                <div class="left flex-1 justify-center">
-                    <img src="./images/poto.png" alt="">
+            </div>
+        </header>
+        <section class="about" id="about">
+            <div class="container flex item-center">
+                <div class="left flex-1">
+                    <img src="./images/poto.png" alt="" class="photo-about">
                 </div>
                 <div class="right flex-1">
-                    <h6>Abdelaziz Soliman</h6>
-                    <h1>I'm a Creative <br><span>Full Stack Engineer</span></h1>
-                    <div>
-                        <button class="btn btn-secondary">Download CV</button>
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello I'm Abdelaziz Soliman</h3>
+                    <p> A Full-Stack Engineer with a background in computer engineering.
+                        I transitioned from a six-year career as a maintenance engineer and served as a reserve officer
+                        in
+                        the Armed Forces,
+                        developing leadership and team management skills. I've dedicated over 1,000 hours to mastering
+                        software engineering,
+                        building 30+ projects, and excelling in remote pair-programming. My technical skills include
+                        JavaScript,
+                        React, Ruby, Rails, and more. Beyond coding, I enjoy reading and watching documentaries.
+                    </p>
+                    <div class="social flex">
+                        <a href="https://www.linkedin.com/in/abdelazizsoliman" target="_blank"
+                            aria-label="linkedin icon"><img src="./images/linkedin.png" alt=""></a>
+                        <a href="https://github.com/abdelazizsoliman" target="_blank" aria-label="github icon"><img
+                                src="./images/github.png" alt=""></a>
+                        <a href="https://medium.com/@abdelaziz.soliman89" target="_blank" aria-label="medium icon"><img
+                                src="./images/medium.png" alt=""></a>
+                        <a href="https://twitter.com/Abdelaz21958317" target="_blank" aria-label="twitter icon"><img
+                                src="./images/twitter.png" alt=""></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="about" id="about">
-        <div class="container flex item-center">
-            <div class="left flex-1">
-                <img src="./images/poto.png" alt="" class="photo-about">
-            </div>
-            <div class="right flex-1">
-                <h1>About <span>Me</span></h1>
-                <h3>Hello I'm Abdelaziz Soliman</h3>
-                <p> A Full-Stack Engineer with a background in computer engineering.
-                    I transitioned from a six-year career as a maintenance engineer and served as a reserve officer in
-                    the Armed Forces,
-                    developing leadership and team management skills. I've dedicated over 1,000 hours to mastering
-                    software engineering,
-                    building 30+ projects, and excelling in remote pair-programming. My technical skills include
-                    JavaScript,
-                    React, Ruby, Rails, and more. Beyond coding, I enjoy reading and watching documentaries.
-                </p>
-                <div class="social flex">
-                    <a href="https://www.linkedin.com/in/abdelazizsoliman" target="_blank"
-                        aria-label="linkedin icon"><img src="./images/linkedin.png" alt=""></a>
-                    <a href="https://github.com/abdelazizsoliman" target="_blank" aria-label="github icon"><img
-                            src="./images/github.png" alt=""></a>
-                    <a href="https://medium.com/@abdelaziz.soliman89" target="_blank" aria-label="medium icon"><img
-                            src="./images/medium.png" alt=""></a>
-                    <a href="https://twitter.com/Abdelaz21958317" target="_blank" aria-label="twitter icon"><img
-                            src="./images/twitter.png" alt=""></a>
+        </section>
 
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h1 class="section-heading">My <span>Skills</span></h1>
+                <p>Front-end</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/HTML.png" alt="">
+                        <h2>HTML</h2>
 
-    <section class="skills" id="skills">
-        <div class="container">
-            <h1 class="section-heading">My <span>Skills</span></h1>
-            <p>Front-end</p>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/HTML.png" alt="">
-                    <h2>HTML</h2>
+                    </div>
+                    <div class="card">
+                        <img src="./images/CSS.png" alt="">
+                        <h2>CSS</h2>
 
-                </div>
-                <div class="card">
-                    <img src="./images/CSS.png" alt="">
-                    <h2>CSS</h2>
+                    </div>
+                    <div class="card">
+                        <img src="./images/javascript.png" alt="">
+                        <h2>JavaScript</h2>
 
-                </div>
-                <div class="card">
-                    <img src="./images/javascript.png" alt="">
-                    <h2>JavaScript</h2>
+                    </div>
+                    <div class="card">
+                        <img src="./images/React.png" alt="">
+                        <h2>React</h2>
 
+                    </div>
+                    <div class="card">
+                        <img src="./images/Bootstrap.png" alt="">
+                        <h2>Bootstrap</h2>
+                    </div>
+                    <div class="card">
+                        <img src="./images/Redux.png" alt="">
+                        <h2>Redux</h2>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="./images/React.png" alt="">
-                    <h2>React</h2>
 
-                </div>
-                <div class="card">
-                    <img src="./images/Bootstrap.png" alt="">
-                    <h2>Bootstrap</h2>
-                </div>
-                <div class="card">
-                    <img src="./images/Redux.png" alt="">
-                    <h2>Redux</h2>
+                <p class="back-end">Back-end</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/Ruby.png" alt="">
+                        <h2>Ruby</h2>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/Rials.png" alt="">
+                        <h2>Rials</h2>
+
+                    </div>
+                    <div class="card">
+                        <img src="./images/SQL.png" alt="">
+                        <h2>SQL</h2>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <p class="back-end">Back-end</p>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/Ruby.png" alt="">
-                    <h2>Ruby</h2>
-
+        <section class="projects" id="projects">
+            <div class="container">
+                <h1>projects</h1>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./images/Bookstore.png" alt="">
+                        <p>Bookstore is an online bookstore. Users can add, edit, and remove books, providing a central
+                            place to organize their work.</p>
+                        <div class="project-buttons">
+                            <a href="https://bookstore-mjui.onrender.com/"><button class="btn1 btn-primary ">See live
+                                </button></a>
+                            <a href="https://github.com/AbdelazizSoliman/bookstore"><button
+                                    class="btn1 btn-primary ">See
+                                    Source </button></a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/Calc.png" alt="">
+                        <p>Math magicians is an online calculator app. It has a beautiful UI and it consist of three
+                            navigation items.
+                            The homepage shows what the app can do, the quote page shows a unique quote on every time
+                            you
+                            refresh the browser. The last page consist of a calculator that can perform mathematical
+                            operations </p>
+                        <div class="project-buttons">
+                            <a href="https://math-magicianv2.onrender.com/"><button class="btn1 btn-primary ">See live
+                                </button></a>
+                            <a href="https://github.com/AbdelazizSoliman/Math-Magicians"><button
+                                    class="btn1 btn-primary ">See
+                                    Source </button></a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/Budget-app.png" alt="">
+                        <p>Budget app is a web application that enable the user to register and sign in
+                            to create categories and purchases and monitor how much money he had spent.</p>
+                        <div class="project-buttons">
+                            <a href="https://budget-app-9h5y.onrender.com/"><button class="btn1 btn-primary ">See live
+                                </button></a>
+                            <a href="https://github.com/AbdelazizSoliman/Budget_app"><button
+                                    class=" btn1 btn-primary ">See
+                                    Source </button></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="./images/Rials.png" alt="">
-                    <h2>Rials</h2>
-
-                </div>
-                <div class="card">
-                    <img src="./images/SQL.png" alt="">
-                    <h2>SQL</h2>
+                <div class=" slider-dot">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <h1>projects</h1>
-            <div class="slider">
-                <div class="slide">
-                    <img src="./images/Bookstore.png" alt="">
-                    <p>Bookstore is an online bookstore. Users can add, edit, and remove books, providing a central
-                        place to organize their work.</p>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Me</span></h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/iphone.png" alt="">
+                        <h2>Call me</h2>
+                        <h4>+201020635513</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./images/gmail.png" alt="">
+                        <h2>Email me</h2>
+                        <h4>abdelaziz.soliman89@gmail.com</h4>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="./images/Calc.png" alt="">
-                    <p>Math magicians is an online calculator app. It has a beautiful UI and it consist of three
-                        navigation items.
-                        The homepage shows what the app can do, the quote page shows a unique quote on every time you
-                        refresh the browser. The last page consist of a calculator that can perform mathematical
-                        operations.</p>
-                </div>
-                <div class="slide">
-                    <img src="./images/Budget-app.png" alt="">
-                    <p>Budget app is a web application that enable the user to register and sign in
-                        to create categories and purchases and monitor how much money he had spent.</p>
-                </div>
+                <form action="https://formspree.io/f/xqkjrrdg" method="POST" class="form-input">
+                    <div class="input-wrap">
+                        <input type="text" name="text" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-wrap-2">
+                        <input type="text" name="text" placeholder="Subject" required>
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Message"
+                            required></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </form>
             </div>
-            <div class="slider-dot"></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <h1 class="section-heading">Contact <span>Me</span></h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/iphone.png" alt="">
-                    <h2>Call me</h2>
-                    <h4>+201020635513</h4>
-                </div>
-                <div class="card">
-                    <img src="./images/gmail.png" alt="">
-                    <h2>Email me</h2>
-                    <h4>abdelaziz.soliman89@gmail.com</h4>
-                </div>
+        <footer>
+            <img src="./images/Logo.PNG" alt="">
+            <div class="footer-text">
+                Copyright 2023 @ Abdelaziz Soliman. All Rights Reserved
             </div>
-            <form action="https://formspree.io/f/xqkjrrdg" method="POST" class="form-input">
-                <div class="input-wrap">
-                    <input type="text" name="text" id="name" placeholder="Your Name" required>
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="input-wrap-2">
-                    <input type="text" name="text" placeholder="Subject" required>
-                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Message"
-                        required></textarea>
-                </div>
-                <div class="btn-wrapper">
-                    <button class="btn btn-primary" type="submit">Send</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <img src="./images/Logo.PNG" alt="">
-        <div class="footer-text">
-            Copyright 2023 @ Abdelaziz Soliman. All Rights Reserved
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
