@@ -255,7 +255,7 @@ header nav .branding {
 }
 
 .slider .slide img {
-    width: 400px;
+    /* width: 400px; */
     height: 350px;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -490,7 +490,7 @@ footer .footer-text {
     }
 
     .about .left img {
-        height: ;: 400px;
+        height: 400px;
         padding-left: 2rem;
     }
 
@@ -553,3 +553,21 @@ footer .footer-text {
         grid-gap: 0;
     }
 }
+
+@keyframes stretch {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(1.5);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .stretch-text {
+    display: inline-block;
+    animation: stretch 2s infinite;
+  }
+  
