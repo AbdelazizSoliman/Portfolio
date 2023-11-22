@@ -27,7 +27,20 @@ body {
 
 header {
     background: var(--dark);
+    position: relative;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+    z-index: -1; 
 }
 
 .circle {
@@ -77,7 +90,7 @@ header nav {
 }
 
 header nav .branding {
-    margin-right: 10rem;
+    margin-right: 5rem;
 }
 
 .btn {
@@ -103,6 +116,7 @@ header nav .branding {
 .hero .left img {
     width: 400px;
     border-radius: 500px;
+    margin-top: 8rem;
 }
 
 .hero .right {
@@ -145,7 +159,7 @@ header nav .branding {
 }
 
 .hero {
-    padding-bottom: 7rem;
+    padding-bottom: 3rem;
 }
 
 .about .social a img {
@@ -469,6 +483,18 @@ footer .footer-text {
 
 .mobile-nav ul li {
     margin-bottom: 2rem;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: var(--dark);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
