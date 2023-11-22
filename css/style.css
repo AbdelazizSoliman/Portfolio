@@ -583,7 +583,28 @@ footer .footer-text {
         grid-template-columns: 1fr;
         grid-gap: 0;
     }
+
+    .slider .slide img {
+        height: 150px;
+    }
 }
+
+@media screen and (max-width: 320px) {
+    .slider .slide img {
+        height: 100px;
+    }
+
+    .contact .card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .card-wrapper .card img {
+         height: 50px; 
+        margin-top: 1rem;
+        position: initial;
+        margin-left: 1rem;
+    }
+  }
 
 @keyframes stretch {
     0% {
