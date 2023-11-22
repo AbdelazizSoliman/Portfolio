@@ -255,10 +255,14 @@ header nav .branding {
 }
 
 .slider .slide img {
-    /* width: 400px; */
     height: 350px;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.slider .slide img:hover {
+    transform: scale(1.1); 
+    transition: all 0.5s ease-in-out;
 }
 
 .projects h1 {
@@ -477,7 +481,8 @@ footer .footer-text {
     }
 
     .hero .left img {
-        width: 260px;
+        width: 200px;
+        margin-right: 2rem;
     }
 
     .hero .right h1 {
@@ -490,7 +495,7 @@ footer .footer-text {
     }
 
     .about .left img {
-        height: 400px;
+        height: 300px;
         padding-left: 2rem;
     }
 
@@ -527,6 +532,11 @@ footer .footer-text {
         text-align: center;
     }
 
+    .about .left img {
+        height: 200px;
+        padding-left: 2rem;
+    }
+
     .about .right .social {
         justify-content: center;
     }
@@ -537,11 +547,6 @@ footer .footer-text {
 
     .skills .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .slider .slide img {
-        height: 200px;
-        width: 300px;
     }
 
     .btn1 {
@@ -571,3 +576,8 @@ footer .footer-text {
     animation: stretch 2s infinite;
   }
   
+
+  .hero .left img:hover {
+    transform: scale(1.1); 
+    transition: all 0.5s ease-in-out;
+  }
