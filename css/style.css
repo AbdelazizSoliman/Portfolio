@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 :root {
     --primary : #61E697;
     --pure : #ffffff;
@@ -27,6 +29,18 @@ header {
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
 }
+
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    background: var(--primary);
+    border-radius: 80%;
+    backface-visibility: hidden;
+}
+
 
 .container {
     max-width: 1152px;
