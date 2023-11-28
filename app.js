@@ -15,42 +15,29 @@ $(document).ready(function () {
   });
 });
 
-var $circle = $('.circle');
+const $circle = $('.circle');
 
 function moveCircle(e) {
   $circle.css({
-      left: e.pageX,
-      top: e.pageY
+    left: e.pageX,
+    top: e.pageY
   });
 }
 
 $(window).on('mousemove', moveCircle);
 
-let humberger = document.querySelector('.hamberger-button');
-  let times = document.querySelector('.times');
-  let mobileNav = document.querySelector('.mobile-nav');
-  let click = document.querySelector('.click');
-  let click1 = document.querySelector('.click-1');
-  let click2 = document.querySelector('.click-2');
-  let click3 = document.querySelector('.click-3');
+const hamburger = document.querySelector('.hamburger-button');
+const times = document.querySelector('.times');
+const mobileNav = document.querySelector('.mobile-nav');
+const clickElements = document.querySelectorAll('.click, .click-1, .click-2, .click-3');
 
-  humberger.addEventListener('click', function () {
-    mobileNav.classList.add('open');
-  });
+hamburger.addEventListener('click', function () {
+  mobileNav.classList.add('open');
+});
 
-  times.addEventListener('click', function () {
-    mobileNav.classList.remove('open');
-  });
+times.addEventListener('click', closeMobileNav);
+clickElements.forEach(element => element.addEventListener('click', closeMobileNav));
 
-  click.addEventListener('click', function () {
-    mobileNav.classList.remove('open');
-  });
-  click1.addEventListener('click', function () {
-    mobileNav.classList.remove('open');
-  });
-  click2.addEventListener('click', function () {
-    mobileNav.classList.remove('open');
-  });
-  click3.addEventListener('click', function () {
-    mobileNav.classList.remove('open');
-  });
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+}
