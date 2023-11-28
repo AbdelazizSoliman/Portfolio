@@ -26,7 +26,7 @@ function moveCircle(e) {
 
 $(window).on('mousemove', moveCircle);
 
-const hamburger = document.querySelector('.hamburger-button');
+const hamburger = document.querySelector('.hamberger-button');
 const times = document.querySelector('.times');
 const mobileNav = document.querySelector('.mobile-nav');
 const clickElements = document.querySelectorAll('.click, .click-1, .click-2, .click-3');
