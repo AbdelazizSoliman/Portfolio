@@ -168,6 +168,10 @@ header nav .branding {
     margin-top: 1rem;
 }
 
+.about .social a img:hover {
+    transform: scale(1.1); 
+    transition: all 0.5s ease-in-out;
+}
 
 .about .left img {
     height: 400px;
