@@ -28,7 +28,7 @@ body {
 header {
     background: var(--dark);
     position: relative;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
 }
 
 header::before {
